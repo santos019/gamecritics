@@ -1,22 +1,28 @@
-import { Route } from 'react-router-dom';
-import PostPage from './login/components/Post/PostPage';
-import LoginPage from './login/components/Login/LoginPage';
-import RegisterPage from './login/components/Register/RegisterPage';
-import Profile from './login/components/Profile/Profile';
-import './App.css';
-import Main from "./category/component/Main";
+import React from "react";
+import TodoTemplate from "./components/todoTemplate";
+import SimpleSlider from "./components/MainImage";
+import TopHeader from "./components/TopHeader";
+import { Route } from "react-router-dom";
+import Home from "./containers/Home";
+import GameIntro from "./containers/GamaIntro";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Route component={PostPage} path="/post" />
-      <Route component={LoginPage} path="/login" />
-      <Route component={RegisterPage} path="/register" />
-      <Route component={Profile} path="/profile" />
+    <div>
+      {/*  <div className="Header">
 
-        <Main />
-    </>
+
+</div>
+<div className="Body">
+
+</div>
+<SimpleSlider />
+  */}
+      <TopHeader />
+      <TodoTemplate></TodoTemplate>
+      <Route path="/" component={Home} />
+    </div>
   );
-}
+};
 
 export default App;
