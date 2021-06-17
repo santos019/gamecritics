@@ -1,46 +1,30 @@
-import { Route } from "react-router-dom";
 import React from "react";
-// import TodoTemplate from "./components/todoTemplate";
-// import SimpleSlider from "./components/MainImage";
-// import TopHeader from "./components/TopHeader";
-// import Home from "./containers/Home";
-// import GameIntro from "./containers/GamaIntro";
-
-import "./App.css";
-import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import ScrollToTop from "./ScrollToTop";
-
+import TodoTemplate from "./components/todoTemplate";
+import SimpleSlider from "./components/MainImage";
+import TopHeader from "./components/TopHeader";
+import { Route } from "react-router-dom";
 import Home from "./containers/Home";
-import Main from "./category/component/Main";
-import HeaderContainer from "./login/containers/common/HeaderContainer";
-import PostPage from "./login/components/Post/PostPage";
-import LoginPage from "./login/components/Login/LoginPage";
-import RegisterPage from "./login/components/Register/RegisterPage";
-import Profile from "./login/components/Profile/Profile";
-import Footer from "./Footer";
-import CombinePages from "./components/CombinePages";
+import GameIntro from "./containers/GamaIntro";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Router>
-        <ScrollToTop>
-          <HeaderContainer />
-          <Route component={Home} path="/" exact />
-          <Route component={PostPage} path="/post" />
-          <Route component={LoginPage} path="/login" />
-          <Route component={RegisterPage} path="/register" />
-          <Route component={Profile} path="/profile" />
-          <Route component={CombinePages} path="/content" />
-          <Route component={Main} path="/category" />
+    <div>
+      {/*  <div className="Header">
 
-          <Footer />
-        </ScrollToTop>
-      </Router>
-    </>
+
+</div>
+<div className="Body">
+
+</div>
+<SimpleSlider />
+  */}
+      <TopHeader />
+      <TodoTemplate></TodoTemplate>
+      <Route path="/" component={Home} />
+    </div>
   );
-}
+};
+
 export default App;
 
 // 터미널 설치 목록

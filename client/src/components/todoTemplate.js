@@ -9,11 +9,9 @@ function todoTemplate() {
     { name: "공지사항", path: "/Notice" },
     { name: "고객센터", path: "/Center" },
   ];
-  
   return (
     <div className="todoTemplate">
-      <Link to="/main" className="titlelink">
-      <div className="app-title">Gamecritics</div></Link>
+      <div className="app-title">Gamecritics</div>
       {/*  <div className="app-title">Gamecritics</div>
       <div className="sideBar">
         {menus.map((menu, index) => {
@@ -24,30 +22,9 @@ function todoTemplate() {
           );
         })}
       </div>*/}
-      <div className="sublink">
-      <Link to="/main" className="sublinkmain">
-        <div className="subgame">
-          게임
-        </div>
-        </Link>
-        <div className="subnotice">
-        <Link to="/notice" className="sublinknotice">
-          공지사항
-          </Link>
-        </div>
-        <div className="subcenter">
-        <Link to="/center" className="sublinkcenter">
-          고객센터
-          </Link>
-        </div>
-
-      </div>
-      {/*
       {menus.map((menu, index) => {
         return (
-          
-
-          <Link to={menu.path} key={index} className="sublink">
+          <Link to={menu.path} key={index}>
             <div className="Linktext">
               {" "}
               <SideBarItem menu={menu} />
@@ -55,7 +32,6 @@ function todoTemplate() {
           </Link>
         );
       })}
-    */}
     </div>
   );
 }

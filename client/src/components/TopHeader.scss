@@ -1,15 +1,27 @@
 .TopMenu {
+<<<<<<< HEAD
   background-color: rgb(14, 18, 41);
   color: white;
   text-align: right;
   
   
+=======
+  background-color: rgb(25, 33, 80);
+  color: white;
+  text-align: right;
+>>>>>>> 6f9e1569124e2d4fc9f5105fc0e161e163d96ca6
 }
 .menu-item {
   display: inline-block;
   cursor: pointer;
+<<<<<<< HEAD
   line-height: 1.5rem;
   font-size: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+=======
+  line-height: 1rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+>>>>>>> 6f9e1569124e2d4fc9f5105fc0e161e163d96ca6
 }
